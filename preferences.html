@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Movie Preferences</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/movies.css">
+    <style>
+        /* ... (your existing styles) ... */
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        </header>
+
+    <div class="preferences-container">
+        <h1>Select Your Favorite Genres</h1>
+        <div class="genre-section">
+            <h2>Action</h2>
+            <input type="checkbox" id="action" name="genre" value="Action">
+            <label for="action">Action</label><br>
+
+            <h2>Comedy</h2>
+            <input type="checkbox" id="comedy" name="genre" value="Comedy">
+            <label for="comedy">Comedy</label><br>
+
+            </div>
+        <button id="save-preferences-btn">Save Preferences</button>
+
+        <div id="movie-recommendations" class="genre-section">
+            <h2>Recommended Movies</h2>
+            <div class="movie-grid">
+                </div>
+        </div>
+    </div>
+
+    <footer>
+        </footer>
+
+    <script src="js/preferences.js"></script>
+</body>
+</html>

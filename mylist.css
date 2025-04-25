@@ -1,0 +1,111 @@
+.my-list-section {
+    padding: 20px;
+    min-height: calc(100vh - 140px); /* Ensure minimum height, adjust as needed */
+    color: #fff; /* Added text color */
+}
+
+.my-list-section h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#my-list-movies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+#my-list-movies .movie-card {
+    background-color: #222;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+#my-list-movies .movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#my-list-movies .movie-card img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 2 / 3; /* Maintain image ratio */
+    object-fit: cover; /* Crop to fit */
+}
+
+#my-list-movies .movie-info {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    flex-grow: 1; /* Take up remaining space */
+}
+
+#my-list-movies .movie-info h3 {
+    font-size: 1em;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Truncate long titles */
+}
+
+#my-list-movies .movie-info button {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-top: 5px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#my-list-movies .movie-info button:hover {
+    background-color: #c51414;
+}
+
+.remove-button {
+    background-color: #8B0000; /* Darker red for "Remove" */
+}
+
+.remove-button:hover {
+    background-color: #A52A2A; /* Slightly lighter on hover */
+}
+
+.play-button {
+    background-color: #007bff; /* Blue for "Play" */
+}
+
+.play-button:hover {
+    background-color: #0056b3;
+}
+
+.mylist-header {
+    display: flex;
+    justify-content: flex-end; /* Push button to the right */
+    margin-bottom: 10px;
+}
+
+#clear-mylist-button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#clear-mylist-button:hover {
+    background-color: #777;
+}
+
+#empty-message {
+    text-align: center;
+    font-style: italic;
+    color: #aaa;
+    margin-top: 20px;
+}

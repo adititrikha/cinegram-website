@@ -1,0 +1,67 @@
+/* You can copy and modify styles from login.css here if needed */
+.signup-container {
+    display: flex;
+    flex-direction: column; /* To stack items vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
+    background-color: #000; /* Assuming a dark background like your login page */
+    color: #fff; /* Assuming white text */
+    /* Add any other existing styles for your container */
+  }
+  
+  .signup-form {
+    /* Add styles for the form itself (width, padding, etc.) */
+    width: 400px; /* Adjust as needed */
+    padding: 20px;
+    background-color: #141414; /* Similar to login form background */
+    border-radius: 5px;
+    /* Add any other existing styles for your form */
+  }
+
+.signup-form h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.signup-form input[type="email"],
+.signup-form input[type="text"],
+.signup-form input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.signup-form button[type="submit"] {
+    background-color: #e50914;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.already-member {
+    color: #b3b3b3;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.already-member a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 14px;
+}

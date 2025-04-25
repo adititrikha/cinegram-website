@@ -1,0 +1,74 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    padding: 40px;
+    width: 400px;
+}
+
+.login-form h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login-form button[type="submit"] {
+    background-color: #e50914;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.login-form .remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.login-form .remember-me input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.login-form .forgot-password {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-form .new-to-cinegram {
+    color: #b3b3b3;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.login-form .new-to-cinegram a {
+    color: #fff;
+    text-decoration: none;
+}

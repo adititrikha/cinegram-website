@@ -1,0 +1,14 @@
+.about-content {
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.about-content ul {
+    list-style-type: disc; /* Or any other list style you prefer */
+    padding-left: 20px;
+}
+
+.about-content li {
+    text-align: justify;
+}

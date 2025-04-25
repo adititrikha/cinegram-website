@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My List - CINEGRAM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mylist.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">CINEGRAM</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="mylist.html">My List</a></li>
+            </ul>
+        </nav>
+       
+        <div class="user-profile">
+            <div id="logged-in-user" style="display: none;">
+                <span id="username-placeholder"></span>
+                <div class="dropdown" id="user-dropdown">
+                    </div>
+            </div>
+            <a href="login.html" id="signin-link">Sign In</a>
+        </div>
+    </header>
+
+    <section class="my-list-section">
+        <h1>My List</h1>
+        <div class="mylist-header">
+            <button id="clear-mylist-button">Clear All</button>
+        </div>
+        <div id="my-list-movies" class="movie-grid fixed-grid">
+            <p id="empty-message" style="display: none;">No movies added to your list yet.</p>
+            <div class="movie-placeholder"></div>
+            <div class="movie-placeholder"></div>
+            <div class="movie-placeholder"></div>
+            <div class="movie-placeholder"></div>
+            <div class="movie-placeholder"></div>
+            <div class="movie-placeholder"></div>
+            </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 CINEGRAM. All rights reserved.</p>
+    </footer>
+
+    <script src="js/mylist.js"></script>
+</body>
+</html>

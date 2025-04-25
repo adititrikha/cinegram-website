@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINEGRAM - Settings</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">CINEGRAM</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="mylist.html">My List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="settings-container">
+        <h1>Settings</h1>
+        <div id="settings-options">
+            
+            <button id="delete-account-btn">Delete Account</button>
+        </div>
+    </div>
+
+    
+
+    <div id="delete-account-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h2>Delete Account</h2>
+            <p>Are you sure you want to permanently delete your account?</p>
+            <button id="confirm-delete-account-btn">Yes, Delete My Account</button>
+            <button id="cancel-delete-account-btn">No, Cancel</button>
+            <span class="close-button">&times;</span>
+        </div>
+    </div>
+    <script src="js/settings.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

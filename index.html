@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINEGRAM - Your Bollywood Movie Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <h1 id="username-display" style="display: none;"></h1>
+    <header class="navbar">
+        <div class="logo">CINEGRAM</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="mylist.html">My List</a></li>
+            </ul>
+        </nav>
+        
+        <div class="user-profile">
+            <div id="logged-in-user" style="display: none;">
+                <span id="username-placeholder"></span>
+                <div class="dropdown-menu">
+                    <a href="#" id="preferences-link">Preferences</a>
+                    <a href="settings.html">Settings</a>
+                    <a href="index.html" id="signout-link">Sign Out</a>
+                </div>
+            </div>
+            <a href="login.html" id="signin-link">Sign In</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to CINEGRAM</h1>
+            <p>Explore the best of Bollywood cinema.</p>
+            <a href="about.html" class="play-button">Play</a>
+            <a href="about.html" class="more-info">More Info</a>
+        </div>
+    </section>
+
+    <section class="movie-section">
+        <h2>Featured Bollywood Movies</h2>
+        <div class="movie-grid">
+            <div class="movie-card">
+                <img src="images/Kabhi Khushi Kabhie Gham....jpg" alt="Movie 1">
+                <div class="movie-info">
+                    <h3>Kabhi Khushi Kabhie Gham...</h3>
+                    <button class="play-button" data-link="https://www.netflix.com/in/title/60036750">Play</button>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="images/CHAAHAT.jpeg" alt="Movie 2">
+                <div class="movie-info">
+                    <h3>CHAAHAT</h3>
+                    <button class="play-button" data-link="https://www.netflix.com/in/title/80158395?source=35">Play</button>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="images/Chup Chup Ke.jpg" alt="Movie 3">
+                <div class="movie-info">
+                    <h3>Chup Chup Ke</h3>
+                    <button class="play-button" data-link="https://www.netflix.com/in/title/70052249?source=35">Play</button>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="images/mohenjo daro.jpg" alt="Movie 4">
+                <div class="movie-info">
+                    <h3>Mohenjo Daro</h3>
+                    <button class="play-button" data-link="https://www.netflix.com/in/title/80104257">Play</button>
+                </div>
+            </div>
+            
+            <div class="movie-card">
+                <img src="images/BaahubaliThe Beginning.jpg" alt="Movie 5">
+                <div class="movie-info">
+                    <h3>Baahubali: The Beginning</h3>
+                    <button class="play-button" data-link="https://www.netflix.com/in/title/80204117">Play</button>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="images/Pushpa 2 The Rule.jpg" alt="Movie 6">
+                <div class="movie-info">
+                    <h3>Pushpa 2: The Rule</h3>
+                    <button class="play-button" data-link="https://www.netflix.com/in/title/82006666">Play</button>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="images/sholay.jpg" alt="Movie 7">
+                <div class="movie-info">
+                    <h3>Sholay</h3>
+                    <button class="play-button" data-link="https://www.primevideo.com/dp/amzn1.dv.gti.b0b65dfd-69d0-c459-39ef-bcea64280993?autoplay=0&ref_=atv_cf_strg_wb">Play</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 CINEGRAM. All rights reserved.</p>
+    </footer>
+
+    <div id="preferences-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Tell us what you like!</h2>
+            <div id="genre-selection">
+            </div>
+            <button id="save-preferences-btn">Save Preferences</button>
+        </div>
+    </div>
+
+    <div id="settings-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h2>Settings</h2>
+            <div id="settings-options">
+                <button id="change-password-btn">Change Password</button>
+                <button id="delete-account-btn">Delete Account</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="change-password-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h2>Change Password</h2>
+            <label for="new-password">New Password:</label>
+            <input type="password" id="new-password" name="new-password"><br><br>
+            <label for="confirm-new-password">Confirm New Password:</label>
+            <input type="password" id="confirm-new-password" name="confirm-new-password"><br><br>
+            <button id="save-new-password-btn">Save New Password</button>
+        </div>
+    </div>
+
+    <div id="delete-account-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h2>Delete Account</h2>
+            <p>Are you sure you want to permanently delete your account?</p>
+            <button id="confirm-delete-account-btn">Yes, Delete My Account</button>
+            <button id="cancel-delete-account-btn">No, Cancel</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/preferences.js"></script>
+</body>
+</html>
